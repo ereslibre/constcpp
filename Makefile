@@ -10,7 +10,7 @@ noconst: test.cpp
 
 testapp: main.cpp
 	g++ -DDOCONSTPLZ -o testconst -ltestconst -I. -L. main.cpp
-	g++ -o testnoconst -ltestconst -I. -L. main.cpp
+	g++ -o testnoconst -ltestnoconst -I. -L. main.cpp
 
 clean:
 	rm -rf *.o *.so testconst testnoconst
